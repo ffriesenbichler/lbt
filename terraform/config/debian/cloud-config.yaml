@@ -1,0 +1,17 @@
+#cloud-init
+
+users:
+  - name: debian
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys:
+      - ${var.}
+    groups: sudo
+    shell: /bin/bash
+
+packages:
+  - qemu-guest-agent
+
+runcmd:
+  - systemctl enable --now qemu-guest-agent
+
+hostname: debian-vm
