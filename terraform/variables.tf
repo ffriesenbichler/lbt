@@ -1,13 +1,13 @@
 variable "debian_13_img" {
-  default = "./debian_13.qcow2"
+  default = "./img/debian_13.qcow2"
 }
 
 variable "winSrv_22_img" {
-  default = "./winSrv_22.qcow2"
+  default = "./img/winSrv_22.iso"
 }
 
 variable "winClt_10_img" {
-  default = "./winClt_10_img"
+  default = "./img/winClt_10.iso"
 }
 
 variable "ssh_pub_key" {
@@ -26,8 +26,9 @@ variable "winClt_10_cloud_config" {
   default = "./config/windows/clt/cloud-config.yaml"
 }
 
-variable "lbt-env" {
+variable "lbt_env" {
   default = {
     pool_name = "lbt-pool"
+    pool_path = "/var/lib/libvirt/images/lbt"
   }
 }
