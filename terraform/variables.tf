@@ -1,13 +1,13 @@
 variable "debian_13_img" {
-  default = "./img/debian_13.qcow2"
+  default = "../img/debian_13.qcow2"
 }
 
 variable "winSrv_22_img" {
-  default = "./img/winSrv_22.iso"
+  default = "../img/winSrv_22.iso"
 }
 
 variable "winClt_10_img" {
-  default = "./img/winClt_10.iso"
+  default = "../img/winClt_10.iso"
 }
 
 variable "ssh_pub_key" {
