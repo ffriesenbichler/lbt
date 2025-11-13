@@ -15,7 +15,7 @@ variable "ssh_pub_key" {
 }
 
 variable "debian_13_cloud_config" {
-  default = "./config/debian/cloud-config-yaml"
+  default = "./config/debian/cloud-config.yaml"
 }
 
 variable "winSrv_22_cloud_config" {
